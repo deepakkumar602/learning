@@ -34,6 +34,13 @@ public class Queue {
         }
     }
 
+    public boolean isEmpty() {
+        if (head != null) {
+            return false;
+        }
+        return true;
+    }
+
     public static void main(String[] args) {
         Queue queue = new Queue();
         queue.enqueue(1);
